@@ -20,7 +20,7 @@ export function VisionSection() {
           {/* Image */}
           <div className="relative aspect-[4/5] overflow-hidden">
             <Image
-              src="/images/linda-portrait.jpg"
+              src="/images/(Nessun oggetto)/859889eb-9ad0-4484-ab59-a83ecad00e72.jpeg"
               alt="Linda Franzoso, fondatrice di Beyond the Step"
               fill
               className="object-cover"

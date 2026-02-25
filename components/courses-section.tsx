@@ -7,21 +7,21 @@ const courses = [
     subtitle: "Danza Moderna & Urban Pop",
     description:
       "Mix esplosivo di Modern e Urban Pop. Sviluppo della coordinazione e della fiducia in sé. Un luogo dove la personalità diventa danza.",
-    image: "/images/course-children.jpg",
+    image: "/images/(Nessun oggetto)/b183bbc8-f8ec-4acf-886f-4112e9411c8c.jpeg",
   },
   {
     title: "Adulti",
     subtitle: "Dance & Training",
     description:
       "Allenamento dinamico tra fitness e fluidità. Migliora postura, tono muscolare e scarica lo stress. Muovi il corpo per liberare la mente.",
-    image: "/images/course-adults.jpg",
+    image: "/images/(Nessun oggetto)/dff799c8-67f8-4a7e-b514-f60be3394a57.jpeg",
   },
   {
     title: "Lezioni Private",
     subtitle: "Gestualità & Interpretazione",
     description:
       "Focus esclusivo su gestualità e interpretazione. Percorso personalizzato per far emergere la tua luce.",
-    image: "/images/course-private.jpg",
+    image: "/images/(Nessun oggetto)/fd60a2a8-e556-46f9-b1fd-7d4376b69f06.jpeg",
   },
 ]
 
