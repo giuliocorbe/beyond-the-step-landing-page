@@ -41,7 +41,7 @@ export default function ChiSiamoPage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src="/images/linda-portrait.jpg"
+                  src="/images/(Nessun oggetto)/2ef23182-f4e7-4c6e-a21c-f32e8df1022d.jpeg"
                   alt="Linda Franzoso, fondatrice di Beyond the Step"
                   fill
                   className="object-cover"

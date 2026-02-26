@@ -78,14 +78,12 @@ export default function CorsiOrariPage() {
                     i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
                   }`}
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden bg-black">
+                  <div className="relative aspect-[4/3] overflow-hidden">
                     <Image
                       src={course.image}
                       alt={course.imageAlt}
                       fill
-                      className={`object-contain ${
-                        course.title.includes("Gestualità") ? "scale-160" : "object-cover"
-                      }`}
+                      className="object-cover"
                       quality={85}
                     />
                     <div className="absolute inset-0 ring-1 ring-inset ring-foreground/10" />

@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import Image from "next/image"
 import { usePathname } from "next/navigation"
 
 const navLinks = [
@@ -39,7 +40,14 @@ export function Navbar() {
       }`}
     >
       <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
-        <Link href="/" className="flex items-center gap-2">
+        <Link href="/" className="flex items-center gap-3">
+          <Image
+            src="/images/image-high-f03vod.webp"
+            alt="Beyond the Step Logo"
+            width={40}
+            height={40}
+            className="h-10 w-10 object-contain"
+          />
           <span
             className={`font-serif text-xl tracking-widest uppercase transition-colors duration-500 ${
               isTransparent ? "text-primary-foreground" : "text-foreground"

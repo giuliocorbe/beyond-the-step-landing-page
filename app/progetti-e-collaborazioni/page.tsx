@@ -51,7 +51,7 @@ export default function ProgettiPage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="/images/gallery-1.jpg"
+                  src="/images/(Nessun oggetto)/49cb7a2e-18c7-405d-be50-fd6fea7bce3d.JPG"
                   alt="Performance di danza dal vivo"
                   fill
                   className="object-cover"
@@ -126,11 +126,11 @@ export default function ProgettiPage() {
             </div>
             <div className="grid gap-4 md:grid-cols-3">
               {[
-                { src: "/images/gallery-1.jpg", alt: "Performance sul palco" },
-                { src: "/images/gallery-2.jpg", alt: "Dettaglio coreografico" },
-                { src: "/images/gallery-4.jpg", alt: "Studio creativo" },
+                { src: "/images/(Nessun oggetto)/16ffbd70-7b7e-4bab-b041-71969d747cce.JPG", alt: "Performance sul palco" },
+                { src: "/images/(Nessun oggetto)/49cb7a2e-18c7-405d-be50-fd6fea7bce3d.JPG", alt: "Dettaglio coreografico" },
+                { src: "/images/(Nessun oggetto)/cb0c5b85-6e9d-497d-a69d-46b5d9e6679a.JPG", alt: "Studio creativo" },
               ].map((img) => (
-                <div key={img.src} className="group relative aspect-[4/3] overflow-hidden">
+                <div key={img.src} className="group relative aspect-[3/4] overflow-hidden">
                   <Image
                     src={img.src}
                     alt={img.alt}

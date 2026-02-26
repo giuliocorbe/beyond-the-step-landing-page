@@ -9,26 +9,20 @@ const galleryImages = [
   {
     src: "/images/(Nessun oggetto)/071c40e6-ec03-470f-91fd-5d44d286b82c.jpeg",
     alt: "Performance di danza sul palco",
-    span: "md:col-span-2 md:row-span-2",
-    aspect: "aspect-square",
+    span: "md:col-span-3 md:row-span-2",
+    aspect: "aspect-[16/9]",
   },
   {
     src: "/images/(Nessun oggetto)/0aa9242c-9fa5-4264-bce7-035ba8e4c00c.jpeg",
     alt: "Dettaglio dei piedi di una danzatrice",
-    span: "",
+    span: "md:row-span-1",
     aspect: "aspect-square",
   },
   {
     src: "/images/(Nessun oggetto)/17fb6852-0ad1-4c10-8469-42121a859dc3.jpeg",
     alt: "Gruppo di danzatori in prova",
-    span: "",
+    span: "md:row-span-1",
     aspect: "aspect-square",
-  },
-  {
-    src: "/images/(Nessun oggetto)/2ef23182-f4e7-4c6e-a21c-f32e8df1022d.jpeg",
-    alt: "Studio di danza",
-    span: "md:col-span-2",
-    aspect: "aspect-[2/1]",
   },
 ]
 
