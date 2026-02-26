@@ -70,8 +70,8 @@ export default function DoveTrovarciPage() {
           subtitle="Dove Trovarci"
           title="Vieni a trovarci"
           description="Ci troviamo facilmente nella zona sportiva di Castelfranco di Sopra, un punto di riferimento comodo e ben riconoscibile per tutti."
-          image="/images/studio-location.jpg"
-          imageAlt="Castelfranco di Sopra, Arezzo"
+          image="/images/silk-viscose-velvet-tc000025.webp"
+          imageAlt="Beyond the Step - Scuola di Danza"
         />
 
         {/* Location info + form */}

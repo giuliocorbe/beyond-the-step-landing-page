@@ -20,8 +20,8 @@ export default function ChiSiamoPage() {
           subtitle="Chi Siamo"
           title="Oltre il passo, verso l'anima."
           description="Il nostro viaggio qui, a 'beyond the step', nasce dal desiderio di farvi scoprire un modo autentico di muovervi e di esprimervi."
-          image="/images/vision-dance.jpg"
-          imageAlt="Danza espressiva in studio"
+          image="/images/silk-viscose-velvet-tc000025.webp"
+          imageAlt="Beyond the Step - Scuola di Danza"
         />
 
         {/* Intro */}

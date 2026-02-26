@@ -41,8 +41,8 @@ export default function ProgettiPage() {
         <PageHeader
           subtitle="Progetti e Collaborazioni"
           title="Creiamo insieme qualcosa di memorabile"
-          image="/images/projects-collab.jpg"
-          imageAlt="Produzione di un videoclip con danzatrice"
+          image="/images/silk-viscose-velvet-tc000025.webp"
+          imageAlt="Beyond the Step - Scuola di Danza"
         />
 
         {/* Main quote */}

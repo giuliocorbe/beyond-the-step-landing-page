@@ -24,7 +24,7 @@ const courses = [
   },
   {
     title: "Adulti: Dance & Training",
-    image: "/images/course-adults.jpg",
+    image: "/images/(Nessun oggetto)/WhatsApp Image 2026-02-25 at 15.19.17.jpeg",
     imageAlt: "Adulti durante una lezione di dance training",
     points: [
       "Allenamento dinamico tra fitness e fluidità.",
@@ -34,7 +34,7 @@ const courses = [
   },
   {
     title: "Lezioni Private: Gestualità & Interpretazione",
-    image: "/images/course-private.jpg",
+    image: "/images/(Nessun oggetto)/gest.jpeg",
     imageAlt: "Lezione privata di gestualità e interpretazione",
     points: [
       "Focus esclusivo su gestualità e interpretazione.",
@@ -78,12 +78,14 @@ export default function CorsiOrariPage() {
                     i % 2 === 1 ? "lg:[&>*:first-child]:order-2" : ""
                   }`}
                 >
-                  <div className="relative aspect-[4/3] overflow-hidden">
+                  <div className="relative aspect-[4/3] overflow-hidden bg-black">
                     <Image
                       src={course.image}
                       alt={course.imageAlt}
                       fill
-                      className="object-cover"
+                      className={`object-contain ${
+                        course.title.includes("Gestualità") ? "scale-160" : "object-cover"
+                      }`}
                       quality={85}
                     />
                     <div className="absolute inset-0 ring-1 ring-inset ring-foreground/10" />

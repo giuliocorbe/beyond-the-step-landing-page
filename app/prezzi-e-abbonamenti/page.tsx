@@ -67,8 +67,8 @@ export default function PrezziPage() {
           subtitle="Prezzi e Abbonamenti"
           title="Scegli Beyond the Step"
           description="Scopri i nostri piani flessibili, pensati per accompagnarti nel tuo percorso unico. Che tu sia un principiante o un ballerino esperto, abbiamo l'opzione perfetta per te."
-          image="/images/course-contemporary.jpg"
-          imageAlt="Danzatori contemporanei"
+          image="/images/silk-viscose-velvet-tc000025.webp"
+          imageAlt="Beyond the Step - Scuola di Danza"
         />
 
         {/* Pricing cards */}
