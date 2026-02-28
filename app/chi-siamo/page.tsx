@@ -84,7 +84,7 @@ export default function ChiSiamoPage() {
               <div className="flex flex-col gap-6 lg:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src="/images/gallery-3.jpg"
+                    src="/images/(Nessun oggetto)/WhatsApp Image 2026-02-28 at 18.46.09.jpeg"
                     alt="Linda Franzoso durante una lezione"
                     fill
                     className="object-cover"
@@ -109,14 +109,7 @@ export default function ChiSiamoPage() {
                     {'"Il mio obiettivo non è solo insegnare dei passi, ma trasmettere la capacità di interpretare la musica e le proprie emozioni. Attraverso il movimento, guido i miei allievi verso una nuova consapevolezza di sé, aiutandoli a sentirsi finalmente bene nel proprio corpo e in armonia con la propria anima."'}
                   </p>
                 </blockquote>
-                <Link
-                  href="/progetti-e-collaborazioni"
-                  className="mt-4 inline-flex w-fit items-center gap-2 text-sm tracking-widest uppercase text-accent transition-colors hover:text-foreground"
-                >
-                  <span>Guarda le performance</span>
-                  <span aria-hidden="true">&rarr;</span>
-                </Link>
-              </div>
+                              </div>
             </div>
           </div>
         </section>

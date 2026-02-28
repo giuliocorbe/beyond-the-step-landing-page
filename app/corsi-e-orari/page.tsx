@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const courses = [
   {
     title: "Children & Junior: Danza Moderna & Urban Pop",
-    image: "/images/course-children.jpg",
+    image: "/images/601347558_18058612139644301_4918366638968107986_n.jpeg",
     imageAlt: "Bambini e ragazzi durante una lezione di danza moderna",
     points: [
       "Mix esplosivo di Modern e Urban Pop.",
@@ -53,7 +53,7 @@ export default function CorsiOrariPage() {
           subtitle="I Nostri Percorsi"
           title="Oltre il passo, verso l'anima"
           description="Beyond the Step offre una varietà di corsi pensati per ispirare e coinvolgere, dai più piccoli agli adulti, ognuno con la sua energia e il suo stile unico."
-          image="/images/hero-dance.jpg"
+          image="/images/silk-viscose-velvet-tc000025.webp"
           imageAlt="Danzatrice in movimento"
         />
 

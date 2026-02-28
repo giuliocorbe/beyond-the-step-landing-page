@@ -4,6 +4,7 @@ import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { PageHeader } from "@/components/page-header"
 import { Footer } from "@/components/footer"
+import { ProjectsMediaCarousel } from "@/components/projects-media-carousel"
 import { Film, Music, Sparkles } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -124,24 +125,7 @@ export default function ProgettiPage() {
               </h2>
               <div className="mt-2 h-px w-16 bg-accent" />
             </div>
-            <div className="grid gap-4 md:grid-cols-3">
-              {[
-                { src: "/images/(Nessun oggetto)/16ffbd70-7b7e-4bab-b041-71969d747cce.JPG", alt: "Performance sul palco" },
-                { src: "/images/(Nessun oggetto)/49cb7a2e-18c7-405d-be50-fd6fea7bce3d.JPG", alt: "Dettaglio coreografico" },
-                { src: "/images/(Nessun oggetto)/cb0c5b85-6e9d-497d-a69d-46b5d9e6679a.JPG", alt: "Studio creativo" },
-              ].map((img) => (
-                <div key={img.src} className="group relative aspect-[3/4] overflow-hidden">
-                  <Image
-                    src={img.src}
-                    alt={img.alt}
-                    fill
-                    className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    quality={80}
-                  />
-                  <div className="absolute inset-0 bg-foreground/0 transition-all duration-500 group-hover:bg-foreground/20" />
-                </div>
-              ))}
-            </div>
+            <ProjectsMediaCarousel />
           </div>
         </section>
 

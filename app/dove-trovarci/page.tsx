@@ -4,7 +4,7 @@ import { Navbar } from "@/components/navbar"
 import { PageHeader } from "@/components/page-header"
 import { Footer } from "@/components/footer"
 import { ContactForm } from "@/components/contact-form"
-import { MapPin, Mail, Phone, Clock, Facebook, Instagram } from "lucide-react"
+import { MapPin, Mail, Phone, Clock, Instagram } from "lucide-react"
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -56,9 +56,8 @@ const contactDetails = [
 ]
 
 const socials = [
-  { label: "Facebook", icon: Facebook, href: "https://www.facebook.com/" },
-  { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/" },
-  { label: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/" },
+  { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/lindafranzoso?igsh=OTdrczdhM3Rxd2lz&utm_source=qr." },
+  { label: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@franzosolinda?_r=1&_t=ZN-94GksZe4Msg" },
 ]
 
 export default function DoveTrovarciPage() {
