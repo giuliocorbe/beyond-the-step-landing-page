@@ -3,7 +3,6 @@ import Image from "next/image"
 import { Navbar } from "@/components/navbar"
 import { PageHeader } from "@/components/page-header"
 import { Footer } from "@/components/footer"
-import { ContactForm } from "@/components/contact-form"
 import { MapPin, Mail, Phone, Clock, Instagram } from "lucide-react"
 
 function TikTokIcon({ className }: { className?: string }) {
@@ -76,7 +75,7 @@ export default function DoveTrovarciPage() {
         {/* Location info + form */}
         <section className="bg-background py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid gap-16 lg:grid-cols-2">
+            <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
               {/* Left: Info */}
               <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-4">
@@ -146,7 +145,19 @@ export default function DoveTrovarciPage() {
                     ))}
                   </div>
                 </div>
+              </div>
 
+              {/* Right: Map */}
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4">
+                  <p className="text-xs tracking-[0.35em] uppercase text-muted-foreground">
+                    Posizione
+                  </p>
+                  <h2 className="font-serif text-3xl text-foreground sm:text-4xl text-balance">
+                    Ci troviamo qui
+                  </h2>
+                  <div className="h-px w-12 bg-accent" />
+                </div>
                 {/* Map embed */}
                 <div className="relative aspect-video overflow-hidden border border-border">
                   <Image
@@ -167,20 +178,6 @@ export default function DoveTrovarciPage() {
                     </a>
                   </div>
                 </div>
-              </div>
-
-              {/* Right: Contact Form */}
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col gap-4">
-                  <p className="text-xs tracking-[0.35em] uppercase text-muted-foreground">
-                    Scrivici
-                  </p>
-                  <h2 className="font-serif text-3xl text-foreground sm:text-4xl text-balance">
-                    Contattaci
-                  </h2>
-                  <div className="h-px w-12 bg-accent" />
-                </div>
-                <ContactForm />
               </div>
             </div>
           </div>
