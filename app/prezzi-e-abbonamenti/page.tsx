@@ -93,18 +93,9 @@ export default function PrezziPage() {
               {plans.map((plan) => (
                 <div
                   key={`${plan.name}-${plan.subtitle}`}
-                  className={`flex flex-col border p-8 transition-all ${
-                    plan.featured
-                      ? "border-accent bg-accent/5 ring-1 ring-accent"
-                      : "border-border bg-card"
-                  }`}
+                  className="flex flex-col border border-border bg-card p-8 transition-all"
                 >
-                  {plan.featured && (
-                    <span className="mb-4 inline-flex w-fit text-xs tracking-widest uppercase text-accent">
-                      Più popolare
-                    </span>
-                  )}
-                  <h3 className="font-serif text-2xl text-card-foreground">{plan.name}</h3>
+                                    <h3 className="font-serif text-2xl text-card-foreground">{plan.name}</h3>
                   <p className="mt-1 text-sm text-muted-foreground">{plan.subtitle}</p>
                   <div className="mt-6 h-px bg-border" />
                   <div className="mt-6 flex flex-1 flex-col gap-4">
@@ -131,11 +122,7 @@ export default function PrezziPage() {
                   </div>
                   <Link
                     href="/dove-trovarci"
-                    className={`mt-8 inline-flex items-center justify-center border px-6 py-3 text-sm font-medium tracking-widest uppercase transition-all ${
-                      plan.featured
-                        ? "border-accent bg-accent text-accent-foreground hover:bg-transparent hover:text-accent"
-                        : "border-foreground/20 text-foreground hover:border-accent hover:text-accent"
-                    }`}
+                    className="mt-8 inline-flex items-center justify-center border border-accent bg-accent px-6 py-3 text-sm font-medium tracking-widest uppercase text-accent-foreground transition-all hover:bg-transparent hover:text-accent"
                   >
                     Contattaci
                   </Link>

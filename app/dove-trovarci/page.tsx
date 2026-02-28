@@ -27,14 +27,14 @@ function TikTokIcon({ className }: { className?: string }) {
 export const metadata: Metadata = {
   title: "Dove Trovarci | Beyond the Step",
   description:
-    "Vieni a trovarci a Via Pretelli, Castelfranco di Sopra (AR). Aperti tutti i giorni tranne la domenica. Contattaci per informazioni.",
+    "Vieni a trovarci a Via Pretolli, Castelfranco di Sopra (AR). Aperti tutti i giorni tranne la domenica. Contattaci per informazioni.",
 }
 
 const contactDetails = [
   {
     icon: MapPin,
     label: "Indirizzo",
-    lines: ["Via Pretelli", "52026 Castelfranco di Sopra (AR)"],
+    lines: ["Via Pretolli", "52026 Castelfranco di Sopra (AR)"],
   },
   {
     icon: Mail,
@@ -158,7 +158,7 @@ export default function DoveTrovarciPage() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-foreground/40">
                     <a
-                      href="https://maps.google.com/?q=Via+Pretelli+52026+Castelfranco+di+Sopra+AR"
+                      href="https://maps.app.goo.gl/B35Axis2yZyhtBzS8"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center border border-primary-foreground/40 bg-background/90 px-6 py-3 text-sm font-medium tracking-widest uppercase text-foreground transition-all hover:bg-accent hover:text-accent-foreground hover:border-accent"

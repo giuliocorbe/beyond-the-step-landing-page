@@ -5,7 +5,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Dove siamo",
-    lines: ["Via Pretelli", "52026 Castelfranco di Sopra (AR)"],
+    lines: ["Via Pretolli", "52026 Castelfranco di Sopra (AR)"],
   },
   {
     icon: Mail,
