@@ -4,7 +4,6 @@ import Link from "next/link"
 import { Navbar } from "@/components/navbar"
 import { PageHeader } from "@/components/page-header"
 import { Footer } from "@/components/footer"
-import { ProjectsMediaCarousel } from "@/components/projects-media-carousel"
 import { Film, Music, Sparkles } from "lucide-react"
 
 export const metadata: Metadata = {
@@ -42,8 +41,8 @@ export default function ProgettiPage() {
         <PageHeader
           subtitle="Progetti e Collaborazioni"
           title="Creiamo insieme qualcosa di memorabile"
-          image="/images/silk-viscose-velvet-tc000025.webp"
-          imageAlt="Beyond the Step - Scuola di Danza"
+          image="/images/projects-collab.jpg"
+          imageAlt="Produzione di un videoclip con danzatrice"
         />
 
         {/* Main quote */}
@@ -52,7 +51,7 @@ export default function ProgettiPage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
               <div className="relative aspect-[4/5] overflow-hidden">
                 <Image
-                  src="/images/(Nessun oggetto)/49cb7a2e-18c7-405d-be50-fd6fea7bce3d.JPG"
+                  src="/images/gallery-1.jpg"
                   alt="Performance di danza dal vivo"
                   fill
                   className="object-cover"
@@ -125,7 +124,24 @@ export default function ProgettiPage() {
               </h2>
               <div className="mt-2 h-px w-16 bg-accent" />
             </div>
-            <ProjectsMediaCarousel />
+            <div className="grid gap-4 md:grid-cols-3">
+              {[
+                { src: "/images/gallery-1.jpg", alt: "Performance sul palco" },
+                { src: "/images/gallery-2.jpg", alt: "Dettaglio coreografico" },
+                { src: "/images/gallery-4.jpg", alt: "Studio creativo" },
+              ].map((img) => (
+                <div key={img.src} className="group relative aspect-[4/3] overflow-hidden">
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    fill
+                    className="object-cover transition-transform duration-700 group-hover:scale-105"
+                    quality={80}
+                  />
+                  <div className="absolute inset-0 bg-foreground/0 transition-all duration-500 group-hover:bg-foreground/20" />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 

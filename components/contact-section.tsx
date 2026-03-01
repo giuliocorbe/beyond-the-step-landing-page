@@ -5,7 +5,7 @@ const contactInfo = [
   {
     icon: MapPin,
     label: "Dove siamo",
-    lines: ["Via Pretolli", "52026 Castelfranco di Sopra (AR)"],
+    lines: ["Via Pretelli", "52026 Castelfranco di Sopra (AR)"],
   },
   {
     icon: Mail,
@@ -17,7 +17,7 @@ const contactInfo = [
     icon: Phone,
     label: "WhatsApp",
     lines: ["334 377 3202"],
-    href: "https://wa.me/393343773202",
+    href: "tel:+393343773202",
   },
 ]
 

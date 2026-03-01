@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 const courses = [
   {
     title: "Children & Junior: Danza Moderna & Urban Pop",
-    image: "/images/601347558_18058612139644301_4918366638968107986_n.jpeg",
+    image: "/images/course-children.jpg",
     imageAlt: "Bambini e ragazzi durante una lezione di danza moderna",
     points: [
       "Mix esplosivo di Modern e Urban Pop.",
@@ -24,7 +24,7 @@ const courses = [
   },
   {
     title: "Adulti: Dance & Training",
-    image: "/images/(Nessun oggetto)/WhatsApp Image 2026-02-25 at 15.19.17.jpeg",
+    image: "/images/course-adults.jpg",
     imageAlt: "Adulti durante una lezione di dance training",
     points: [
       "Allenamento dinamico tra fitness e fluidità.",
@@ -34,7 +34,7 @@ const courses = [
   },
   {
     title: "Lezioni Private: Gestualità & Interpretazione",
-    image: "/images/(Nessun oggetto)/gest.jpeg",
+    image: "/images/course-private.jpg",
     imageAlt: "Lezione privata di gestualità e interpretazione",
     points: [
       "Focus esclusivo su gestualità e interpretazione.",
@@ -53,7 +53,7 @@ export default function CorsiOrariPage() {
           subtitle="I Nostri Percorsi"
           title="Oltre il passo, verso l'anima"
           description="Beyond the Step offre una varietà di corsi pensati per ispirare e coinvolgere, dai più piccoli agli adulti, ognuno con la sua energia e il suo stile unico."
-          image="/images/silk-viscose-velvet-tc000025.webp"
+          image="/images/hero-dance.jpg"
           imageAlt="Danzatrice in movimento"
         />
 

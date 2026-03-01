@@ -20,8 +20,8 @@ export default function ChiSiamoPage() {
           subtitle="Chi Siamo"
           title="Oltre il passo, verso l'anima."
           description="Il nostro viaggio qui, a 'beyond the step', nasce dal desiderio di farvi scoprire un modo autentico di muovervi e di esprimervi."
-          image="/images/silk-viscose-velvet-tc000025.webp"
-          imageAlt="Beyond the Step - Scuola di Danza"
+          image="/images/vision-dance.jpg"
+          imageAlt="Danza espressiva in studio"
         />
 
         {/* Intro */}
@@ -41,7 +41,7 @@ export default function ChiSiamoPage() {
             <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
               <div className="relative aspect-[3/4] overflow-hidden">
                 <Image
-                  src="/images/(Nessun oggetto)/2ef23182-f4e7-4c6e-a21c-f32e8df1022d.jpeg"
+                  src="/images/linda-portrait.jpg"
                   alt="Linda Franzoso, fondatrice di Beyond the Step"
                   fill
                   className="object-cover"
@@ -84,7 +84,7 @@ export default function ChiSiamoPage() {
               <div className="flex flex-col gap-6 lg:order-2">
                 <div className="relative aspect-[4/3] overflow-hidden">
                   <Image
-                    src="/images/(Nessun oggetto)/WhatsApp Image 2026-02-28 at 18.46.09.jpeg"
+                    src="/images/gallery-3.jpg"
                     alt="Linda Franzoso durante una lezione"
                     fill
                     className="object-cover"
@@ -109,7 +109,14 @@ export default function ChiSiamoPage() {
                     {'"Il mio obiettivo non è solo insegnare dei passi, ma trasmettere la capacità di interpretare la musica e le proprie emozioni. Attraverso il movimento, guido i miei allievi verso una nuova consapevolezza di sé, aiutandoli a sentirsi finalmente bene nel proprio corpo e in armonia con la propria anima."'}
                   </p>
                 </blockquote>
-                              </div>
+                <Link
+                  href="/progetti-e-collaborazioni"
+                  className="mt-4 inline-flex w-fit items-center gap-2 text-sm tracking-widest uppercase text-accent transition-colors hover:text-foreground"
+                >
+                  <span>Guarda le performance</span>
+                  <span aria-hidden="true">&rarr;</span>
+                </Link>
+              </div>
             </div>
           </div>
         </section>

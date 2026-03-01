@@ -3,7 +3,8 @@ import Image from "next/image"
 import { Navbar } from "@/components/navbar"
 import { PageHeader } from "@/components/page-header"
 import { Footer } from "@/components/footer"
-import { MapPin, Mail, Phone, Clock, Instagram } from "lucide-react"
+import { ContactForm } from "@/components/contact-form"
+import { MapPin, Mail, Phone, Clock, Facebook, Instagram } from "lucide-react"
 
 function TikTokIcon({ className }: { className?: string }) {
   return (
@@ -26,14 +27,14 @@ function TikTokIcon({ className }: { className?: string }) {
 export const metadata: Metadata = {
   title: "Dove Trovarci | Beyond the Step",
   description:
-    "Vieni a trovarci a Via Pretolli, Castelfranco di Sopra (AR). Aperti tutti i giorni tranne la domenica. Contattaci per informazioni.",
+    "Vieni a trovarci a Via Pretelli, Castelfranco di Sopra (AR). Aperti tutti i giorni tranne la domenica. Contattaci per informazioni.",
 }
 
 const contactDetails = [
   {
     icon: MapPin,
     label: "Indirizzo",
-    lines: ["Via Pretolli", "52026 Castelfranco di Sopra (AR)"],
+    lines: ["Via Pretelli", "52026 Castelfranco di Sopra (AR)"],
   },
   {
     icon: Mail,
@@ -55,8 +56,9 @@ const contactDetails = [
 ]
 
 const socials = [
-  { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/lindafranzoso?igsh=OTdrczdhM3Rxd2lz&utm_source=qr." },
-  { label: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/@franzosolinda?_r=1&_t=ZN-94GksZe4Msg" },
+  { label: "Facebook", icon: Facebook, href: "https://www.facebook.com/" },
+  { label: "Instagram", icon: Instagram, href: "https://www.instagram.com/" },
+  { label: "TikTok", icon: TikTokIcon, href: "https://www.tiktok.com/" },
 ]
 
 export default function DoveTrovarciPage() {
@@ -68,14 +70,14 @@ export default function DoveTrovarciPage() {
           subtitle="Dove Trovarci"
           title="Vieni a trovarci"
           description="Ci troviamo facilmente nella zona sportiva di Castelfranco di Sopra, un punto di riferimento comodo e ben riconoscibile per tutti."
-          image="/images/silk-viscose-velvet-tc000025.webp"
-          imageAlt="Beyond the Step - Scuola di Danza"
+          image="/images/studio-location.jpg"
+          imageAlt="Castelfranco di Sopra, Arezzo"
         />
 
         {/* Location info + form */}
         <section className="bg-background py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
-            <div className="grid gap-16 lg:grid-cols-2 lg:items-start">
+            <div className="grid gap-16 lg:grid-cols-2">
               {/* Left: Info */}
               <div className="flex flex-col gap-10">
                 <div className="flex flex-col gap-4">
@@ -145,19 +147,7 @@ export default function DoveTrovarciPage() {
                     ))}
                   </div>
                 </div>
-              </div>
 
-              {/* Right: Map */}
-              <div className="flex flex-col gap-6">
-                <div className="flex flex-col gap-4">
-                  <p className="text-xs tracking-[0.35em] uppercase text-muted-foreground">
-                    Posizione
-                  </p>
-                  <h2 className="font-serif text-3xl text-foreground sm:text-4xl text-balance">
-                    Ci troviamo qui
-                  </h2>
-                  <div className="h-px w-12 bg-accent" />
-                </div>
                 {/* Map embed */}
                 <div className="relative aspect-video overflow-hidden border border-border">
                   <Image
@@ -169,7 +159,7 @@ export default function DoveTrovarciPage() {
                   />
                   <div className="absolute inset-0 flex items-center justify-center bg-foreground/40">
                     <a
-                      href="https://maps.app.goo.gl/B35Axis2yZyhtBzS8"
+                      href="https://maps.google.com/?q=Via+Pretelli+52026+Castelfranco+di+Sopra+AR"
                       target="_blank"
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center border border-primary-foreground/40 bg-background/90 px-6 py-3 text-sm font-medium tracking-widest uppercase text-foreground transition-all hover:bg-accent hover:text-accent-foreground hover:border-accent"
@@ -178,6 +168,20 @@ export default function DoveTrovarciPage() {
                     </a>
                   </div>
                 </div>
+              </div>
+
+              {/* Right: Contact Form */}
+              <div className="flex flex-col gap-6">
+                <div className="flex flex-col gap-4">
+                  <p className="text-xs tracking-[0.35em] uppercase text-muted-foreground">
+                    Scrivici
+                  </p>
+                  <h2 className="font-serif text-3xl text-foreground sm:text-4xl text-balance">
+                    Contattaci
+                  </h2>
+                  <div className="h-px w-12 bg-accent" />
+                </div>
+                <ContactForm />
               </div>
             </div>
           </div>

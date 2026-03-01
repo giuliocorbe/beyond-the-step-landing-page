@@ -7,22 +7,28 @@ import { X } from "lucide-react"
 
 const galleryImages = [
   {
-    src: "/images/(Nessun oggetto)/071c40e6-ec03-470f-91fd-5d44d286b82c.jpeg",
+    src: "/images/gallery-1.jpg",
     alt: "Performance di danza sul palco",
-    span: "md:col-span-3 md:row-span-2",
-    aspect: "aspect-[16/9]",
+    span: "md:col-span-2 md:row-span-2",
+    aspect: "aspect-square",
   },
   {
-    src: "/images/(Nessun oggetto)/0aa9242c-9fa5-4264-bce7-035ba8e4c00c.jpeg",
+    src: "/images/gallery-2.jpg",
     alt: "Dettaglio dei piedi di una danzatrice",
-    span: "md:row-span-1",
+    span: "",
     aspect: "aspect-square",
   },
   {
-    src: "/images/(Nessun oggetto)/17fb6852-0ad1-4c10-8469-42121a859dc3.jpeg",
+    src: "/images/gallery-3.jpg",
     alt: "Gruppo di danzatori in prova",
-    span: "md:row-span-1",
+    span: "",
     aspect: "aspect-square",
+  },
+  {
+    src: "/images/gallery-4.jpg",
+    alt: "Studio di danza",
+    span: "md:col-span-2",
+    aspect: "aspect-[2/1]",
   },
 ]
 

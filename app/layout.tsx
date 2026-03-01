@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { DM_Sans, Playfair_Display } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { WhatsAppChat } from '@/components/whatsapp-chat'
 import './globals.css'
 
 const dmSans = DM_Sans({
@@ -18,9 +17,21 @@ export const metadata: Metadata = {
   title: 'Beyond the Step | Scuola di Danza - Linda Franzoso',
   description: 'Scomponi il movimento, libera l\u2019emozione: dove la tecnica svanisce, l\u2019anima diventa visibile. Scuola di danza a Castelfranco di Sopra, Arezzo.',
   icons: {
-    icon: '/images/image-high-f03vod.webp',
-    shortcut: '/images/image-high-f03vod.webp',
-    apple: '/images/image-high-f03vod.webp',
+    icon: [
+      {
+        url: '/icon-light-32x32.png',
+        media: '(prefers-color-scheme: light)',
+      },
+      {
+        url: '/icon-dark-32x32.png',
+        media: '(prefers-color-scheme: dark)',
+      },
+      {
+        url: '/icon.svg',
+        type: 'image/svg+xml',
+      },
+    ],
+    apple: '/apple-icon.png',
   },
 }
 
@@ -39,7 +50,6 @@ export default function RootLayout({
       <body className="font-sans antialiased">
         {children}
         <Analytics />
-        <WhatsAppChat />
       </body>
     </html>
   )

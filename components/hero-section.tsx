@@ -6,8 +6,8 @@ export function HeroSection() {
     <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/images/silk-viscose-velvet-tc000025.webp"
-        alt="Beyond the Step - Scuola di Danza"
+        src="/images/hero-dance.jpg"
+        alt="Danzatrice contemporanea in movimento"
         fill
         className="object-cover"
         priority
