@@ -10,7 +10,7 @@ export function Footer() {
               href="https://teknelabs.it"
               target="_blank"
               rel="noreferrer"
-              className="group inline-flex items-center gap-0.5 text-primary-foreground/40 hover:text-primary-foreground transition-colors"
+              className="group inline-flex items-center gap-0.5 text-primary-foreground/30 hover:text-primary-foreground transition-colors"
               aria-label="Sito di TEKNE Labs"
             >
               <span className="whitespace-nowrap text-xs font-light">Made by</span>
