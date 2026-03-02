@@ -40,6 +40,11 @@ const projectMedia: ProjectMediaItem[] = [
     src: "/videos/tikmate.app_7597006628088581398_hd.mp4",
     alt: "Video performance 2",
   },
+  {
+    type: "video",
+    src: "/videos/SaveVid.Net_AQM-Fnk4cH5-Z5e-uWCZTF0iquStZvIaKmO4SuDCQIvDKG1PmBZAS9SN9IJEovxVwZN-kGAzNxdVhNCd0U94rlZV.mp4",
+    alt: "Video performance 3",
+  },
 ]
 
 const loopedMedia = [...projectMedia, ...projectMedia]
